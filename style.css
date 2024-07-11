@@ -1,0 +1,37 @@
+#nav_bar{
+    border: 1px solid red;
+    text-align: center;
+    background-color: blue;
+}
+#nav_bar h1{
+    font-size: 30px;
+}
+#form{
+    width: 50%;
+    margin:10px auto;
+    border: 1px solid black;
+    padding: 30px;
+    
+}
+#form input{
+    width: 90%;
+    height: 30px;
+    margin: 10px 0px 10px 40px;
+    border: 2px solid gray;
+}
+#form label{
+    margin-left: 20px;
+    font-weight: bolder;
+}
+.button{
+    text-align: center;
+}
+#btn{
+    padding: 10px;
+    width: 30%;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
