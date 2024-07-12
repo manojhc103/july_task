@@ -1,7 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
 #nav_bar{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    height: 60px;
     text-align: center;
     background-color: blue;
+    padding: 10px;
+    
 }
 #nav_bar h1{
     font-size: 30px;
@@ -26,6 +36,7 @@
 .button{
     text-align: center;
 }
+
 #btn{
     padding: 10px;
     width: 30%;
@@ -34,4 +45,75 @@
     font-size: 20px;
     border: none;
     border-radius: 5px;
+}
+#btn:hover{
+    cursor: pointer;
+}
+#container{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+}
+.card{
+    /* border: 1px solid green; */
+    text-align: center;
+    height: 400px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+.card h2{
+    margin: 5px;
+}
+.card h4{
+    margin: 5px;
+}
+.del{
+    padding: 10px;
+    margin: 20px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.del:hover{
+    cursor: pointer;
+}
+.edit{
+    padding: 10px;
+    margin: 20px;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.edit:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width:200px) and (max-width:768px) {
+    #container{ 
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    }
+    #form{
+        width: 90%;
+        margin: auto;
+        border: 1px solid black;
+        
+    }
+    #form input{
+        width: 90%;
+        height: 30px;
+        /* margin: 10px 0px 10px 40px; */
+        margin-left: 15px;
+        border: 2px solid gray;
+    }
 }
